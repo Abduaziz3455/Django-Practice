@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post_detail</title>
+</head>
+
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <div class="post-entry">
+        <h2>{{obyekt.title}}</h2>
+        <p>{{obyekt.body}}</p>
+    </div>
+
+    <div class="post_delete">
+        <p id="edit"><a href="{% url 'post_edit' obyekt.pk %}">+ Edit Blog Post</a></p>
+        <p id="delete"><a href="{% url 'post_delete' obyekt.pk %}">- Delete Blog Post</a></p>
+    </div>
+    {% endblock content %}
+</body>
+
+</html>

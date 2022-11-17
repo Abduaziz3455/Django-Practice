@@ -1,0 +1,98 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    border-bottom: 1px solid #999;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+header h1 a {
+    color: red;
+    text-decoration: none;
+}
+
+.nav-left {
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.nav-right {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.post_delete p a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.post_delete p a {
+    text-decoration: none;
+}
+
+.post-entry {
+    margin-bottom: 2rem;
+}
+
+.post-entry h2 {
+    margin: 0.5rem 0;
+}
+
+.post-entry h2 a,
+.post-entry h2 a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.post-entry p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.post-entry h2 a:hover {
+    color: red;
+}
+
+.login_form a {
+    font-size: 20px;
+    color: rgb(130, 56, 56);
+    text-decoration: none;
+}
+
+a.login {
+    color: red;
+}
+
+a.login:hover,
+a.signup:hover {
+    border-bottom: 1px solid #999;
+}
+
+.login_form {
+    margin-bottom: 15px;
+}
+
+.login_form p {
+    margin-bottom: 8px;
+}
+
+.hi_form {
+    font-size: 25px;
+}
+
+.hi_form a:hover {
+    color: red;
+    font-size:18px;
+
+}
+
+.hi_form a {
+    font-size:18px;
+
+}
+.hi_user {
+    margin-bottom: auto;
+}

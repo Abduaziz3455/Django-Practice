@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base html</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+    <link rel="icon" href="https://seeklogo.com/images/D/django-logo-4C5ECF7036-seeklogo.com.png">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="nav-left">
+                <h1><a href="{% url 'home' %}">Django Blog</a></h1>
+            </div>
+            <div class="nav-right">
+                <a href="{% url 'post_new' %}">+ New Blog Post</a>
+            </div>
+        </header>
+
+        {% if user.is_authenticated %}
+        <div class="hi_form">
+            <p class="hi_user">Hi {{user.username}}</p>
+            <a href="{% url 'logout' %}">Log out</a>
+        </div>
+        
+            {% else %}
+            <div class="login_form">
+             <!--css in conditions-->
+                <p>You are not logged in.</p>
+                <a class ='login' href="{% url 'login' %}">Log In</a>
+                |
+                <a class ='signup' href="{%url 'signup' %}">Sign Up</a>
+            </div>
+        {% endif %}
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+
+</html>
