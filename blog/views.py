@@ -3,26 +3,32 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from django.urls import reverse_lazy
 
 # Create your views here.
+
+
 class BlogListView(ListView):
     model = Post
-    template_name= 'home.html' # default value object_list
+    template_name = 'home.html'  # default value object_list
+
 
 class BlogDetailView(DetailView):
     model = Post
-    template_name= 'post_detail.html'
-    context_object_name = 'obyekt' # default value post or object
+    template_name = 'post_detail.html'
+    context_object_name = 'obyekt'  # default value post or object
+
 
 class BlogCreateView(CreateView):
     model = Post
-    template_name= 'post_new.html'
-    fields = '__all__' # or we can say specific fields like ['title', 'body']
+    template_name = 'post_new.html'
+    fields = '__all__'  # or we can say specific fields like ['title', 'body']
+
 
 class BlogUpdateView(UpdateView):
     model = Post
-    template_name= 'post_edit.html'
+    template_name = 'post_edit.html'
     fields = ['title', 'body']
+
 
 class BlogDeleteView(DeleteView):
     model = Post
-    template_name= 'post_delete.html'
-    success_url= reverse_lazy('home')
+    template_name = 'post_delete.html'
+    success_url = reverse_lazy('home')
