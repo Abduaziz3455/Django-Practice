@@ -19,7 +19,7 @@ class BlogDetailView(DetailView):
 class BlogCreateView(CreateView):
     model = Post
     template_name = 'post_new.html'
-    fields = ['title', 'body']  # or we can say specific fields like ['title', 'body']
+    fields = '__all__'  # or we can say specific fields like ['title', 'body']
 
 
 class BlogUpdateView(UpdateView):
