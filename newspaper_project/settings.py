@@ -38,7 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Local
     'users.apps.UsersConfig',
+    'pages.apps.PagesConfig',
+
+    # 3rd Party
+    'crispy_forms', 
 ]
 
 MIDDLEWARE = [
@@ -124,8 +130,12 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+##news
 AUTH_USER_MODEL = 'users.CustomUser'
 
 #authentication
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
