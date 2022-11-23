@@ -134,10 +134,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ##news
 AUTH_USER_MODEL = 'users.CustomUser'
 
-#authentication
+# authentication
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+# EMAIL
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_HOST_USER = 'postmaster@sandboxcb670f741c7942c6ae3b2c83c3dd0d7e.mailgun.org'
+EMAIL_HOST_PASSWORD = '61c8a94558d724b14595fc72aab6ae15-69210cfc-3c942165'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
