@@ -7,6 +7,8 @@ name = "pypi"
 django = "==4.1.2"
 gunicorn = "==20.1.0"
 django-crispy-forms = "==1.14.0"
+django-mailgun-mime = "*"
+django-anymail = {extras = ["mailgun"], version = "*"}
 
 [dev-packages]
 
