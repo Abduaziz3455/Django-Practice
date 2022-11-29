@@ -6,3 +6,6 @@ https://github.com/Abduaziz3455/Django-Practice/tree/blog_project
 
 Newspaper_Project
 https://github.com/Abduaziz3455/Django-Practice/tree/news
+
+Real_Estate_project
+https://github.com/Abduaziz3455/Django-Practice/tree/real_estate
