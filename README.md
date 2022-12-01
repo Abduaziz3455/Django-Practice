@@ -13,3 +13,5 @@ https://github.com/Abduaziz3455/Django-Practice/tree/news
 
 Simple Real_Estate_project
 https://github.com/Abduaziz3455/Django-Practice/tree/real_estate
+![image](https://user-images.githubusercontent.com/93714453/205082502-2a7970e7-a219-4523-b1dc-af4fff0c9e3c.png)
+
