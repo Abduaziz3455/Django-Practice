@@ -8,10 +8,18 @@ https://github.com/Abduaziz3455/Django-Practice/tree/blog_project
 
 
 
+
+
+
+
 Simple Newspaper_Project (deployed with heroku https://newspaperapppr.herokuapp.com/)
 
 https://github.com/Abduaziz3455/Django-Practice/tree/news
 ![image](https://user-images.githubusercontent.com/93714453/205081607-01df1ea4-82b0-4c32-94c9-794ac1ac3add.png)
+
+
+
+
 
 
 
